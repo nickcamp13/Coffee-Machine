@@ -156,9 +156,8 @@ def coffee_machine():
             continue
 
         transaction = process_transaction(user_input)
-        if not transaction:
+        if transaction:
             continue
-
         update_resources(user_input)
         print("Thank you for your patronage! Enjoy your coffee!")
 
